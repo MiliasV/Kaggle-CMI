@@ -8,7 +8,7 @@ Repository for Kaggle's competition "IEEE's Signal Processing Society - Camera M
 * The pixels of each image are different for each device (same device, same pixels).
 
 ### Test Images 
-* In the test set were captured with the same 10 camera models, but using a second device. 
+* Pictures in the test set were captured with the same 10 camera models, but using a second device. 
 * While the train data includes full images, the test data contains only single 512 x 512 pixel blocks cropped from the center of a single image taken with the device. 
 * No two image blocks come from the same original image.
 * Half of the images in the test set have been altered. The image names indicate whether or not they were manipulated (\_manip) from the original or unaltered (\_unalt). 
@@ -22,4 +22,9 @@ Repository for Kaggle's competition "IEEE's Signal Processing Society - Camera M
      * gamma correction using gamma = 0.8
      * gamma correction using gamma = 1.2
 
-### Pre-processing
+### Additional Data (by Gleb Posobin)
+flickr_images: Pictures taken with the phones from the dataset. There is also a good_jpgs file — that’s a list of all photos with resolution matching the ones in the provided training dataset.
+
+Note!: Picturestaken with moto x that flickr provides are made with an old (2013) model, but for our task a 2014 version is used, so these photos should be discarded.
+
+In total there are 5377 photos, after leaving only the ones that are in good_jpgs file.
